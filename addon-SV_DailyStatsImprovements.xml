@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="SV_DailyStatsImprovements" title="Daily Stats Improvements" version_string="1.0.0" version_id="10000" url="" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="load_class" execute_order="90000" callback_class="SV_DailyStatsImprovements_Listener" callback_method="load_class" active="1" hint="XenForo_Model_Stats" description="XenForo_Model_Stats"/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <option option_id="sv_stats_retry_count" edit_format="spinbox" data_type="integer" can_backup="1">
+      <default_value>2</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="stats" display_order="900"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_sv_stats_retry_count" version_id="10000" version_string="1.0.0"><![CDATA[Retry Stats on Error]]></phrase>
+    <phrase title="option_sv_stats_retry_count_explain" version_id="10000" version_string="1.0.0"><![CDATA[When building statistics, retry if an error occurs.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>

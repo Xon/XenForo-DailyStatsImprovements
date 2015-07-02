@@ -1,8 +1,8 @@
 <?php
 
-class SV_RetryDailyStats_Listener
+class SV_DailyStatsImprovements_Listener
 {
-    const AddonNameSpace = 'SV_RetryDailyStats';
+    const AddonNameSpace = 'SV_DailyStatsImprovements';
 
     public static function load_class($class, array &$extend)
     {
